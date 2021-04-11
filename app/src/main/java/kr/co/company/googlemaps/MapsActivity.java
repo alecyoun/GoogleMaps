@@ -92,8 +92,5 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
 
-        // 지도 띄우기
-        Uri uri = Uri.parse(String.format("geo:%f,%f?z=10", 33.49962, 126.53118833333333));
-        startActivity(new Intent(Intent.ACTION_VIEW, uri));
     }
 }
